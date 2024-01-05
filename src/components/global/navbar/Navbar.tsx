@@ -1,4 +1,5 @@
 "use client";
+import Button from "@/components/common/Button";
 import Link from "next/link";
 import React, {useEffect, useState} from "react";
 
@@ -55,7 +56,7 @@ function Navbar() {
           <Link href="/">
             <img src="/images/logo (1).png" alt="" />
           </Link>
-          <div className="flex gap-5">
+          <div className="flex items-center gap-5">
             {navLink.map(({name, href}, index) => (
               <Link
                 href={href}
@@ -65,6 +66,9 @@ function Navbar() {
                 {name}
               </Link>
             ))}
+            <Link href="/">
+              <Button name="Buy Now" color="blue" />
+            </Link>
           </div>
         </div>
       </div>

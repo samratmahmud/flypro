@@ -13,6 +13,9 @@ const config: Config = {
         primary: "#1392ed",
         gray: {"200": "#f1f5f9", "300": "#777", "900": "#333"},
         slate: {"600": "#eaeaea"},
+        blue: {"300": "rgba(255,255,255)"},
+        green: {"600": "#34bf49"},
+        red: {"500": "#ff4c4c"},
       },
     },
     fontSize: {
@@ -34,8 +37,7 @@ const config: Config = {
       OpenSans: ["'Open Sans'", ...fontFamily.sans],
     },
     backgroundImage: {
-      bgLinear:
-        "url('/images/linear-gradient(-180deg,#4cb5ff 0%,#1392ed 100%)')",
+      "100": "linear-gradient(-180deg,#4cb5ff 0%,#1392ed 100%)",
     },
     container: {
       center: true,

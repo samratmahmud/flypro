@@ -16,7 +16,8 @@ function Header() {
             Explore a new perspective at your fingertips.
           </p>
           <Link
-            href=""
+            href="https://www.youtube.com/"
+            target="_blank"
             className="flex gap-2.5 items-center justify-center group mb-6"
           >
             <img
