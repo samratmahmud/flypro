@@ -26,6 +26,16 @@ function PhotoGallery() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
   };
 
   return (

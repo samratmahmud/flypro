@@ -35,7 +35,7 @@ function DetailsCard() {
           {cards.map(({icon, title, describtion}, index) => (
             <div
               key={index}
-              className="bg-gray-200 py-9 px-4 flex flex-col items-center rounded-md"
+              className="bg-gray-200 py-9 px-4 flex flex-col items-center rounded-md hover:scale-110 duration-300"
             >
               <i className="mb-4">
                 <img className="w-12" src={icon} alt="" />
