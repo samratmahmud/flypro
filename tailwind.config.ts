@@ -11,11 +11,11 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#1392ed",
-        gray: {"200": "#f1f5f9", "300": "#777", "900": "#333"},
+        gray: {"200": "#f1f5f9", "300": "#777", "500": "#bbb", "900": "#333"},
         slate: {"600": "#eaeaea"},
         blue: {"300": "rgba(255,255,255)"},
         green: {"600": "#34bf49"},
-        red: {"500": "#ff4c4c"},
+        red: {"500": "#ff4c4c", "950": "#212121"},
       },
     },
     fontSize: {
