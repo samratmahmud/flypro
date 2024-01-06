@@ -28,6 +28,8 @@ const navLink = [
 
 function Navbar() {
   const [isVisible, setIsVisible] = useState(false);
+  const [show, setShow] = useState(false);
+  const toggle = () => setShow((prev) => !prev);
 
   useEffect(() => {
     const handelScroll = () => {
@@ -53,22 +55,56 @@ function Navbar() {
     >
       <div className="container">
         <div className="flex justify-between items-center gap-3">
-          <Link href="/">
+          <Link href="/" className="py-2.5">
             <img src="/images/logo (1).png" alt="" />
           </Link>
           <div className="flex items-center gap-5">
-            {navLink.map(({name, href}, index) => (
-              <Link
-                href={href}
-                key={index}
-                className="text-sm leading-[70px] text-white font-semibold"
-              >
-                {name}
+            <div className="hidden md:block">
+              <div className="flex items-center gap-5">
+                {navLink.map(({name, href}, index) => (
+                  <Link
+                    href={href}
+                    key={index}
+                    className="lg:text-sm text-6xl leading-[70px] text-white font-semibold"
+                  >
+                    {name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="flex items-center gap-5">
+              <Link href="/">
+                <Button name="Buy Now" color="blue" />
               </Link>
-            ))}
-            <Link href="/">
-              <Button name="Buy Now" color="blue" />
-            </Link>
+              <div
+                onClick={toggle}
+                role="button"
+                className={`py-2 px-1 md:hidden relative ${
+                  show ? "" : "overflow-hidden"
+                }`}
+              >
+                <img
+                  className="w-5 aspect-square"
+                  src="/images/icons8-menu-50.png"
+                  alt=""
+                />
+                <div
+                  className={`flex flex-col gap-5 bg-gray-200 w-full duration-500 px-12 right-0  absolute top-12 ${
+                    show ? "min-h-[250px]" : "h-[0px]"
+                  }`}
+                >
+                  {navLink.map(({name, href}, index) => (
+                    <Link
+                      href={href}
+                      key={index}
+                      className="text-sm  font-semibold"
+                    >
+                      {name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

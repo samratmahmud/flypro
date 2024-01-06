@@ -29,6 +29,7 @@ const config: Config = {
       "3xl": ["32px", {lineHeight: "1.2", letterSpacing: "-0.05em"}],
       "4xl": ["36px", {lineHeight: "45px", letterSpacing: "-0.05em"}],
       "5xl": ["50px", {lineHeight: "1.2", letterSpacing: "-0.05em"}],
+      "6xl": ["10px", {lineHeight: "35px", letterSpacing: "-0.5px"}],
     },
     boxShadow: {
       sm: "0px 16px 28px 0px rgba(0, 0, 0, 0.05)",

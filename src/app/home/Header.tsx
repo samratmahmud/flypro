@@ -4,7 +4,7 @@ import React from "react";
 function Header() {
   return (
     <section className="relative">
-      <div className="bg-cover bg-no-repeat">
+      <div className="bg-cover bg-no-repeat bg-center">
         <img className="w-full" src="/images/hero-bg.png" alt="" />
       </div>
       <div className="absolute top-[200px] z-10 left-0 right-0">
