@@ -25,11 +25,12 @@ const config: Config = {
       base: ["16px", {lineHeight: "1.7", letterSpacing: "-0.05em"}],
       lg: ["18px", {lineHeight: "1.7", letterSpacing: "-0.05em"}],
       xl: ["20px", {lineHeight: "1.2", letterSpacing: "-0.05em"}],
-      "2xl": ["30px", {lineHeight: "36px"}],
+      "2xl": ["29px", {lineHeight: "36px"}],
       "3xl": ["32px", {lineHeight: "1.2", letterSpacing: "-0.05em"}],
       "4xl": ["36px", {lineHeight: "45px", letterSpacing: "-0.05em"}],
       "5xl": ["50px", {lineHeight: "1.2", letterSpacing: "-0.05em"}],
-      "6xl": ["10px", {lineHeight: "35px", letterSpacing: "-0.5px"}],
+      "6xl": ["10px", {lineHeight: "70px", letterSpacing: "-0.5px"}],
+      "7xl": ["14px", {lineHeight: "70px", letterSpacing: "-0.5px"}],
     },
     boxShadow: {
       sm: "0px 16px 28px 0px rgba(0, 0, 0, 0.05)",
@@ -39,6 +40,8 @@ const config: Config = {
     },
     backgroundImage: {
       "100": "linear-gradient(-180deg,#4cb5ff 0%,#1392ed 100%)",
+      "header-bg": "url('/images/hero-bg.png')",
+      "dron-camera": "url('/images/hero-cam.png')",
     },
     container: {
       center: true,

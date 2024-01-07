@@ -49,62 +49,56 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed left-0 right-0 z-[9999] duration-300 ${
-        isVisible ? "shadow-sm py-0 bg-primary" : "py-[5px]"
+      className={`fixed left-0 right-0 z-[9999] duration-300 max-h-20 ${
+        isVisible ? "shadow-sm py-0 bg-primary" : "py-2.5"
       }`}
     >
       <div className="container">
         <div className="flex justify-between items-center gap-3">
-          <Link href="/" className="py-2.5">
+          <Link href="/" className="py-1.5">
             <img src="/images/logo (1).png" alt="" />
           </Link>
           <div className="flex items-center gap-5">
-            <div className="hidden md:block">
-              <div className="flex items-center gap-5">
-                {navLink.map(({name, href}, index) => (
-                  <Link
-                    href={href}
-                    key={index}
-                    className="lg:text-sm text-6xl leading-[70px] text-white font-semibold"
-                  >
-                    {name}
-                  </Link>
-                ))}
-              </div>
+            <div className="hidden md:flex items-center gap-5">
+              {navLink.map(({name, href}, index) => (
+                <Link
+                  href={href}
+                  key={index}
+                  className="lg:text-7xl text-6xl text-white font-semibold"
+                >
+                  {name}
+                </Link>
+              ))}
             </div>
             <div className="flex items-center gap-5">
               <Link href="/">
                 <Button name="Buy Now" color="blue" />
               </Link>
-              <div
-                onClick={toggle}
-                role="button"
-                className={`py-2 px-1 md:hidden relative ${
-                  show ? "" : "overflow-hidden"
-                }`}
-              >
+              <button onClick={toggle} className="py-[25px] px-1 md:hidden">
                 <img
                   className="w-5 aspect-square"
                   src="/images/icons8-menu-50.png"
                   alt=""
                 />
-                <div
-                  className={`flex flex-col gap-5 bg-gray-200 w-full duration-500 px-12 right-0  absolute top-12 ${
-                    show ? "min-h-[250px]" : "h-[0px]"
-                  }`}
-                >
-                  {navLink.map(({name, href}, index) => (
-                    <Link
-                      href={href}
-                      key={index}
-                      className="text-sm  font-semibold"
-                    >
-                      {name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
+              </button>
             </div>
+          </div>
+        </div>
+        <div className="relative md:hidden">
+          <div
+            className={`flex flex-col gap-5 bg-gray-200 w-full duration-300 right-0 top-0 left-0 absolute overflow-hidden ${
+              show ? "max-h-screen ease-in" : "max-h-0 ease-out"
+            }`}
+          >
+            {navLink.map(({name, href}, index) => (
+              <Link
+                href={href}
+                key={index}
+                className="text-sm leading-[12px] px-[15px] py-2.5 font-semibold"
+              >
+                {name}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

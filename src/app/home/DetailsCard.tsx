@@ -30,17 +30,17 @@ const cards = [
 function DetailsCard() {
   return (
     <section>
-      <div className="container mt-[200px] mb-20">
-        <div className="flex gap-[30px]">
+      <div className="container mt-[200px] md:mb-20 mb-[60px]">
+        <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-[30px]">
           {cards.map(({icon, title, describtion}, index) => (
             <div
               key={index}
-              className="bg-gray-200 py-9 px-4 flex flex-col items-center rounded-md hover:scale-110 duration-300"
+              className="bg-gray-200 lg:py-9 py-[30px] lg:px-4 px-2.5 flex flex-col items-center rounded-md hover:scale-105 duration-300"
             >
               <i className="mb-4">
                 <img className="w-12" src={icon} alt="" />
               </i>
-              <h3 className="text-lg font-semibold text-gray-900 mb-1.5">
+              <h3 className="md:text-lg text-base font-semibold text-gray-900 mb-1.5">
                 {title}
               </h3>
               <p className="text-center">{describtion}</p>

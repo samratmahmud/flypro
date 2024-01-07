@@ -15,13 +15,13 @@ export default function Home() {
       <Header />
       <DetailsCard />
       <Cameradetails />
-      <Explore />
-      <PhotoGallery />
-      <CameraCollection />
-      <People />
-      <Testimonial />
-      <FrequentlyQuestion />
-      <Footer />
+      {/* <Explore /> */}
+      {/* <PhotoGallery /> */}
+      {/* <CameraCollection /> */}
+      {/* <People /> */}
+      {/* <Testimonial /> */}
+      {/* <FrequentlyQuestion /> */}
+      {/* <Footer /> */}
     </main>
   );
 }
