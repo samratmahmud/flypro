@@ -17,7 +17,7 @@ const photos = [
   "/images/gallery-3.jpg",
 ];
 
-function PhotoGallery() {
+function Screenshots() {
   const settings = {
     dots: false,
     infinite: true,
@@ -39,8 +39,8 @@ function PhotoGallery() {
   };
 
   return (
-    <section>
-      <div className="relative overflow-hidden">
+    <section className="overflow-hidden">
+      <div className="relative">
         <Slider {...settings}>
           {photos.map((index) => (
             <img src={index} alt="" />
@@ -56,4 +56,4 @@ function PhotoGallery() {
   );
 }
 
-export default PhotoGallery;
+export default Screenshots;

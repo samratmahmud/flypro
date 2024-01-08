@@ -86,10 +86,10 @@ const footerLink = [
 
 function Footer() {
   return (
-    <section className="bg-slate-950/90 pt-20">
+    <section className="bg-slate-950 md:pt-20 pt-[60px]">
       <div
         aria-label="inputField"
-        className="flex max-w-[450px] mx-auto -mt-[110px]"
+        className="flex max-w-[450px] mx-auto md:-mt-[110px] -mt-[90px]"
       >
         <input
           className="text-sm leading-[60px] text-gray-900 px-6 outline-none bg-gray-200 w-full rounded-s-[30px]"
@@ -97,12 +97,12 @@ function Footer() {
           id="email"
           placeholder="Enter Your Email Address..."
         />
-        <button className="bg-primary text-white text-xs font-semibold leading-[60px] px-4 rounded-e-[30px] focus:border-2 focus:border-black uppercase border-2 border-primary">
+        <button className="bg-primary text-white text-xs font-semibold leading-[57px] px-4 rounded-e-[30px] focus:border-2 focus:border-black uppercase border-2 border-primary">
           Subscribe
         </button>
       </div>
-      <div className="container mt-8 pb-20">
-        <div className="grid grid-cols-4 gap-[30px]">
+      <div className="container mt-8 md:pb-20 pb-[60px]">
+        <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-[30px]">
           {footerLink.map(({logo, describtion, title, link}, index) => (
             <div key={index}>
               {logo && (

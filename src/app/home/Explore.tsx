@@ -42,21 +42,21 @@ const exploreCard = [
 function Explore() {
   return (
     <section>
-      <div className="container my-20">
+      <div className="container md:my-20 my-[60px]">
         <h2 className="text-center mb-2.5">
           It's time to explore new horizons!
         </h2>
         <p className="text-center mb-10">
           Integrated Flypro camera Stabilizes every single pixelin the image.
         </p>
-        <div className="grid grid-cols-3 gap-[30px]">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-[30px]">
           {exploreCard.map(({icon, title, describtion}, index) => (
             <div
               key={index}
               className="flex flex-col items-center justify-center p-5 group"
             >
               <i className="bg-gray-200 rounded p-4 mb-2.5 max-w-20 aspect-square group-hover:scale-110 duration-300">
-                <img className="" src={icon} alt="" />
+                <img src={icon} alt="" />
               </i>
               <h3 className="text-center mb-1.5">{title}</h3>
               <p className="text-center">{describtion}</p>

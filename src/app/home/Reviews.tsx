@@ -25,7 +25,7 @@ const peopleReview = [
   },
 ];
 
-function People() {
+function Reviews() {
   const settings = {
     dots: true,
     infinite: true,
@@ -34,21 +34,11 @@ function People() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          dots: true,
-        },
-      },
-    ],
   };
 
   return (
-    <section>
-      <div className="container my-20">
+    <section className="overflow-hidden">
+      <div className="container md:my-20 my-[60px]">
         <h2 className="text-center mb-2.5">What people says.</h2>
         <p className="text-center mb-10">
           Flypro camera is an optical instrument for capturing super images.
@@ -63,7 +53,7 @@ function People() {
                   alt=""
                 />
               </i>
-              <p className="max-w-[777px] mx-auto mb-4">{describtion}</p>
+              <p className="max-w-[70%] mx-auto mb-4">{describtion}</p>
               <h3 className="text-base font-medium">{name}</h3>
               <div className="flex justify-center gap-0.5">
                 {[...Array(5)].map((_, index) => (
@@ -83,4 +73,4 @@ function People() {
   );
 }
 
-export default People;
+export default Reviews;

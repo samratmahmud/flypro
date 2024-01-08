@@ -27,7 +27,7 @@ const cards = [
   },
 ];
 
-function DetailsCard() {
+function Features() {
   return (
     <section>
       <div className="container mt-[200px] md:mb-20 mb-[60px]">
@@ -53,4 +53,4 @@ function DetailsCard() {
   );
 }
 
-export default DetailsCard;
+export default Features;

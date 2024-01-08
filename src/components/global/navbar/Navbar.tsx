@@ -49,6 +49,7 @@ function Navbar() {
 
   return (
     <nav
+      id="navbar"
       className={`fixed left-0 right-0 z-[9999] duration-300 max-h-20 ${
         isVisible ? "shadow-sm py-0 bg-primary" : "py-2.5"
       }`}
@@ -86,7 +87,7 @@ function Navbar() {
         </div>
         <div className="relative md:hidden">
           <div
-            className={`flex flex-col gap-5 bg-gray-200 w-full duration-300 right-0 top-0 left-0 absolute overflow-hidden ${
+            className={`flex flex-col bg-gray-200 w-full duration-300 right-0 top-0 left-0 absolute overflow-hidden ${
               show ? "max-h-screen ease-in" : "max-h-0 ease-out"
             }`}
           >
@@ -94,7 +95,7 @@ function Navbar() {
               <Link
                 href={href}
                 key={index}
-                className="text-sm leading-[12px] px-[15px] py-2.5 font-semibold"
+                className="text-sm leading-[22px] px-[15px] py-2.5 font-semibold"
               >
                 {name}
               </Link>

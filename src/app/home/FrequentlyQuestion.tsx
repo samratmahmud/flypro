@@ -26,12 +26,12 @@ const questionAnswer = [
 function FrequentlyQuestion() {
   return (
     <section>
-      <div className="container my-20">
+      <div className="container md:my-20 my-[60px]">
         <h2 className="text-center mb-2.5">Frequently asked questions?</h2>
         <p className="text-center mb-14">
           Flypro camera is an optical instrument for capturing super images.
         </p>
-        <div className="grid grid-cols-2 gap-[30px]">
+        <div className="grid md:grid-cols-2 gap-[30px]">
           {questionAnswer.map(({title, describtion}, index) => (
             <div key={index}>
               <div className="flex gap-1.5 mb-2.5">

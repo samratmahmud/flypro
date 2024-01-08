@@ -12,10 +12,10 @@ const config: Config = {
       colors: {
         primary: "#1392ed",
         gray: {"200": "#f1f5f9", "300": "#777", "500": "#bbb", "900": "#333"},
-        slate: {"600": "#eaeaea"},
+        slate: {"600": "#eaeaea", "950": "#212121"},
         blue: {"300": "rgba(255,255,255)"},
         green: {"600": "#34bf49"},
-        red: {"500": "#ff4c4c", "950": "#212121"},
+        red: {"500": "#ff4c4c"},
       },
     },
     fontSize: {
@@ -31,6 +31,7 @@ const config: Config = {
       "5xl": ["50px", {lineHeight: "1.2", letterSpacing: "-0.05em"}],
       "6xl": ["10px", {lineHeight: "70px", letterSpacing: "-0.5px"}],
       "7xl": ["14px", {lineHeight: "70px", letterSpacing: "-0.5px"}],
+      "8xl": ["28px", {lineHeight: "1.2", letterSpacing: "-0.05em"}],
     },
     boxShadow: {
       sm: "0px 16px 28px 0px rgba(0, 0, 0, 0.05)",
@@ -42,6 +43,7 @@ const config: Config = {
       "100": "linear-gradient(-180deg,#4cb5ff 0%,#1392ed 100%)",
       "header-bg": "url('/images/hero-bg.png')",
       "dron-camera": "url('/images/hero-cam.png')",
+      "testmonial-bg": "url('/images/cta-bg.jpg')",
     },
     container: {
       center: true,
