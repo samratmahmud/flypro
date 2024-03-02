@@ -11,19 +11,19 @@ const navLink = [
    },
    {
       name: "Features",
-      href: "/",
+      href: "#features",
    },
    {
       name: "Screenshots",
-      href: "/",
+      href: "#screenshot",
    },
    {
       name: "Pricing",
-      href: "/",
+      href: "#pricing",
    },
    {
       name: "Reviews",
-      href: "/",
+      href: "#reviews",
    },
 ];
 

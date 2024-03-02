@@ -7,8 +7,8 @@ import Testimonial from "./home/Testimonial";
 import UpButton from "../components/global/UpButton";
 import Reviews from "./home/Reviews";
 import Pricing from "./home/Pricing";
-import Screenshots from "./home/Screenshots";
 import Features from "./home/Features";
+import Screenshots from "./home/Screenshots";
 
 export default function Home() {
    return (
